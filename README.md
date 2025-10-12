@@ -80,8 +80,8 @@ automation-workflows/
 
 
 #### ℹ️ this repository contains selected folders and projects from my organization work.    
-> Some commits have been hidden to protect sensitive information.  
-> The commit count and dates are preserved to reflect my contributions and development timeline.
+- Some commits have been hidden to protect sensitive information.  
+- The commit count and dates are preserved to reflect my contributions and development timeline.
 
 ---
 > **Repository created on:** 2025-09-11, 08:46 (UTC+3)
