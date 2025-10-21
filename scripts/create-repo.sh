@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # GitHub user
-USER="falcon12120"
+USER="shahinwahab"
 TOKEN=$(gh auth token)  # 🔐 Uses your active gh CLI session
 
 # --- Parse Arguments ---
@@ -56,15 +56,17 @@ curl -s -X PUT "https://api.github.com/repos/$USER/$REPO_NAME/topics" \
 # --- Add COPYRIGHT.md file ---
 COPYRIGHT_MD_CONTENT="## Copyright © $(date +%Y) $USER
 
-All rights reserved.
+This repository contains portfolio demonstrations of work created for clients.
 
-This source code is **proprietary** and protected by international copyright law.
+All projects and content remain the property of respective clients  
+and are shown here with permission of the clients for portfolio purposes only.
 
-Any reproduction, distribution, modification or unauthorized use in whole or in part is **strictly prohibited**.
+Unauthorized reproduction, distribution, or commercial use is strictly 
+prohibited.
 
-Violators will face legal consequences, including but not limited to:
-- 🚫 DMCA takedowns  
-- 🔒 Permanent bans from platforms  
+Violators may face legal consequences, including but not limited to:
+- 🚫 DMCA takedowns
+- 🔒 Platform bans
 - ⚖️ Prosecution to the fullest extent of the law"
 ENCODED_COPYRIGHT_MD_CONTENT=$(echo "$COPYRIGHT_MD_CONTENT" | base64)
 
